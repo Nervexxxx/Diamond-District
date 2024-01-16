@@ -1,0 +1,29 @@
+body {
+  color: white;
+  background-image: url(../img/logofond.gif);
+  background-repeat: no-repeat;
+  background-color: black;
+  background-size: 100%;
+}
+
+.bouton {
+  display: block;
+  margin: 400px auto; /* Center horizontally and add vertical spacing */
+  background-color: transparent; /* Transparent background */
+  border-radius: 50px; /* Smaller border radius for a smoother look */
+  border: 2px solid #808080; /* Visible border color */
+  color: #ffffff;
+  text-align: center;
+  font-size: 20px;
+  font-family: judas-caps;
+  padding: 50px 70px; /* Increased padding for a larger button */
+  width: 200px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.bouton:hover {
+  background-color: #ffffff;
+  color: #808080;
+  font-size: 22px;
+}

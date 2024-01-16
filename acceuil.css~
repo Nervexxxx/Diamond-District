@@ -1,0 +1,24 @@
+body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
+            background-color: grey;
+        }
+
+.transition-page {
+            opacity: 0;
+            text-align: center;
+            animation: fadeEffect 3s ease-in-out forwards;
+        }
+
+@keyframes fadeEffect {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }

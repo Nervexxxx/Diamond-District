@@ -1,0 +1,66 @@
+{<meta http-equiv="refresh" content="1; URL=html3.html">
+    background: #999999
+}
+body
+{
+    margin:0;
+    padding:0;
+    font-size: 50px;
+    font-family: inherit;
+    text-align: center;
+    color: #fafafa;
+}
+.content
+{
+    line-height: 500px;
+    background: #999999;
+}
+.loader
+{
+    display: inline-block;
+    vertical-align: center;
+}
+.loader-basic
+{
+    height: 50px;
+    width: 50px;
+    position: relative;
+    border: 5px solid rgba(0,0,0,.2);
+    border-radius: 50px;
+}
+.loader-basic:after
+{
+    content:'';
+    height:50px;
+    width: 50px;
+    left: -5px;
+    top: -5px;
+    position: absolute;
+    border-radius: 50px;
+    border: 5px solid transparent;
+    border-top: 5px solid #fafafa;
+    animation: 1s basic  linear infinite;
+    -webkit-animation: 1s basic linear infinite;
+ 
+}
+@keyframes basic
+{
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
+@-webkit-keyframes basic
+{
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
+.texte
+{
+    color: #999999
+}
+.beta
+{
+    font-size: 20px;
+    position: absolute; /*pour déplacer une image est ou un texte sur l'ecran*/
+    top: 900px;         /*fonctionne avec absolute pour déplacer le texte ou l'image de haut en bas*/
+    left: 1150px;       /*fonctionne avec absolute pour déplacer le text ou l'image de droite a gauche*/
+}<meta http-equiv="refresh" content="1; URL=html3.html">
