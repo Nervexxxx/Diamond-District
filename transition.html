@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <link rel="icon" href="img/logoo.webp" type="image/gif" />
+  <title>Diamond District</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            color: white;
+            background-image: url(img/fondmoove.gif);
+            background-repeat: no-repeat;
+            background-color: black;
+            background-size: 100%;
+            overflow: hidden;
+            margin: 0;
+        }
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var body = document.body;
+
+            // Ajoute un gestionnaire d'événements pour détecter la fin du GIF
+            body.onload = function () {
+                // Attends quelques secondes avant de rediriger (ajuster le délai selon votre GIF)
+                setTimeout(function () {
+                    // Redirige vers "html2.html" après le délai
+                    window.location.href = 'html2.html';
+                }, 5000); // Délai de 5 secondes (ajuster selon votre besoin)
+            };
+        });
+    </script>
+</head>
+<body>
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <link rel="icon" href="img/logoo.webp" type="image/gif" />
+  <title>Diamond District</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diamond District</title>
+    <link href="css/css2.css" rel="stylesheet" />
+</head>
+
+<body>
+
+    <header id="header">
+        <div>
+            <img src="img/logo.webp" alt="Logo Diamond District">
+        </div>
+    </header>
+
+    <section class="products-section">
+        <article class="product" data-hover-image="img/habit/black.jpg">
+            <img src="img/habit/gris.jpg" alt="Look at the moon">
+            <h3>Look at the moon</h3>
+            <p>T-shirt</p>
+            <div class="product-info">
+                <div class="colors">
+                    <span class="color">coton épais</span>
+                    <span class="color">S, M, L, XL</span>
+                </div>
+                <p>Fabriqué à partir de 100 % de coton américain.</p>
+            </div>
+            <p>Prix: $18.02</p>
+            <button>Acheter</button>
+        </article>
+
+        <article class="product" data-hover-image="img/habit/white.jfif">
+            <img src="img/habit/20231126_231816_IMG_1408.jpg" alt="Good things are coming">
+            <h3>Good things are coming</h3>
+            <p>Sweat à capuche</p>
+            <div class="product-info">
+                <div class="colors">
+                    <span class="color">coton épais et polyester</span>
+                    <span class="color">S, M, L, XL</span>
+                </div>
+                <p>Fabriqué à partir de 100 % de coton américain.</p>
+            </div>
+            <p>Prix: $31.55</p>
+            <button>Acheter</button>
+        </article>
+
+        <article class="product" data-hover-image="img/habit/sticker.jfif">
+            <img src="img/habit/sticker.jfif" alt="Stickers">
+            <h3>Stickers</h3>
+            <p>Diamond District.</p>
+            <div class="product-info">
+                <div class="colors">
+                    <span class="color">vinyle blanc</span>
+                    <span class="color">3"x4"</span>
+                </div>
+                <p>Sticker de la marque</p>
+            </div>
+            <p>Prix: $1.12</p>
+            <button>Acheter</button>
+        </article>
+    </section>
+
+    <footer>
+        <p>&copy; Diamond District -- <script>document.write(new Date().getFullYear())</script></p>
+    </footer>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var products = document.querySelectorAll('.product');
+
+        products.forEach(function (product) {
+            var info = product.querySelector('.product-info');
+            var image = product.querySelector('img');
+            var originalImageSrc = image.src; // Sauvegarde du chemin de l'image d'origine
+
+            product.addEventListener('mouseover', function () {
+                info.style.display = 'block';
+
+                // Change la source de l'image sur le survol avec la valeur de data-hover-image
+                var hoverImageSrc = product.getAttribute('data-hover-image');
+                image.src = hoverImageSrc;
+            });
+
+            product.addEventListener('mouseout', function () {
+                info.style.display = 'none';
+
+                // Rétablit la source de l'image d'origine sur le survol
+                image.src = originalImageSrc;
+            });
+        });
+    });
+</script>
+
+
+
+</body>
+
+</html>

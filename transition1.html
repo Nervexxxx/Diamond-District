@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<link href="css/transition.css" rel="stylesheet" />
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page de Transition</title>
+</head>
+<body>
+<div class="transition-page" id="transitionPage">
+    <img src="img/logo.webp">
+</div>
+
+<script>
+    // Fonction pour afficher la page de transition pendant un certain délai
+    function afficherPageTransition() {
+        var transitionPage = document.getElementById("transitionPage");
+        transitionPage.style.display = "block";
+    }
+
+    // Fonction pour effectuer la redirection avec fondu
+    function redirigerAvecFondu() {
+        var transitionPage = document.getElementById("transitionPage");
+        transitionPage.style.animation = "fadeEffectOut 2s ease-in-out forwards";
+
+        setTimeout(function () {
+            // Redirection vers html1.html après le délai (par exemple, 2000 millisecondes soit 2 secondes)
+            window.location.href = "html2.html";
+        }, 2000); // ajustez la durée en millisecondes selon vos besoins
+    }
+
+    // Appeler la fonction au chargement de la page
+    window.onload = function () {
+        afficherPageTransition();
+        setTimeout(redirigerAvecFondu, 3000); // délai avant la redirection, ajustez selon vos besoins
+    };
+</script>
+</body>
+</html>

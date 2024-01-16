@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang ="fr">
+  <link rel="icon" href="img/logoo.webp" type="image/gif" />
+  <title>Diamond District</title>
+<link href="css/css.css" rel="stylesheet" />
+<head>
+<meta charset ="UTF -8"/>
+</head>
+<body>
+<body>
+<button class="bouton"><a href="transition.html">Go to the Shop</a></button>
+</body>
+</body>
+</html>
